@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://furulidenconsulting.se/sitemap.xml
