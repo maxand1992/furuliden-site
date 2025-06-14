@@ -367,7 +367,59 @@ header {
 </style>
 </head>
 
+<!-- Din sida och innehåll här -->
 
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Vad händer om jag är sen med årsredovisningen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Du riskerar avgifter från både Bolagsverket och Skatteverket..."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hur mycket kostar det om man inte skickar in i tid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Totalt kan det kosta upp till 42 500 kr i förseningsavgifter."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- LocalBusiness Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Furuliden Consulting AB",
+  "url": "https://furulidenconsulting.se",
+  "logo": "https://furulidenconsulting.se/logo.png",
+  "telephone": "+46709351349",
+  "email": "max@furulidenconsulting.se",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Exempelgatan 1",
+    "addressLocality": "Stockholm",
+    "postalCode": "123 45",
+    "addressCountry": "SE"
+  },
+  "sameAs": [
+    "https://www.facebook.com/furulidenconsulting"
+  ]
+}
+</script>
+
+</body>
+</html>
 
 <body>
   <nav>
@@ -382,7 +434,7 @@ header {
   <section>
 	
     <h1>Frågor & Svar – Skatteverket & Bolagsverket</h1>
-
+    <a href="tjanster.html" title="Läs mer om våra bokföringstjänster">våra tjänster</a>
     <div class="qa-box">
       <h3>Vad händer om du inte lämnar in deklarationerna?</h3>
 <div class="sub-box">
