@@ -1,6 +1,11 @@
 <!doctype html>
 <html>
   <head>
+    <script>
+  if (window.location.href.includes('#recovery_token=')) {
+    window.location.href = '/admin/' + window.location.hash;
+  }
+</script>
     <meta charset="utf-8">
     <title>Adminpanel – Furuliden</title>
   </head>
