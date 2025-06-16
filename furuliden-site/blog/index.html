@@ -2,52 +2,75 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8">
-  <title>Blogg – Furuliden Consulting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Furuliden Blogg</title>
+  <link rel="icon" href="/favicon.png">
   <style>
     body {
+      font-family: 'Inter', sans-serif;
       background-color: #101820;
       color: #F3F4F8;
-      font-family: 'Inter', sans-serif;
       padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
     }
     h1 {
       color: #C7A144;
     }
-    ul {
-      list-style: none;
-      padding-left: 0;
+    .post {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border: 1px solid #C7A144;
+      border-radius: 6px;
+      background-color: #111b24;
     }
-    li {
-      margin-bottom: 1rem;
+    .post h2 {
+      margin-top: 0;
+      color: #F3C969;
     }
-    a {
+    .post a {
       color: #F3C969;
       text-decoration: none;
     }
-    a:hover {
+    .post a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Vår blogg!</h1>
-  <ul id="post-list"></ul>
+  <h1>Furulidens Blogg</h1>
+  <div id="blog-list">Laddar blogginlägg...</div>
 
   <script>
-    // Hårdkodat för enkelhet – byt ut till ditt faktiska innehåll eller bygg med JS
-    const posts = [
-      // Exempel – ersätt med dina riktiga filer
-      { title: "Första blogginlägget", filename: "2025-06-16-forsta-inlagget.md" },
-      { title: "Bokföringsbrott – vad gäller?", filename: "2025-06-17-bokforingsbrott.md" }
-    ];
+    async function loadBlogPosts() {
+      const list = document.getElementById('blog-list');
+      try {
+        const res = await fetch('/blog');
+        const html = await res.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const links = [...doc.links].filter(link => link.href.endsWith('.md'));
 
-    const list = document.getElementById("post-list");
+        if (links.length === 0) {
+          list.innerHTML = '<p>Inga inlägg hittades.</p>';
+          return;
+        }
 
-    posts.forEach(post => {
-      const li = document.createElement("li");
-      li.innerHTML = `<a href="${post.filename}">${post.title}</a>`;
-      list.appendChild(li);
-    });
+        list.innerHTML = '';
+        links.forEach(link => {
+          const title = decodeURIComponent(link.textContent.replace(/[-_]/g, ' '));
+          const div = document.createElement('div');
+          div.className = 'post';
+          div.innerHTML = `<h2><a href="${link.href}">${title}</a></h2>`;
+          list.appendChild(div);
+        });
+      } catch (err) {
+        list.innerHTML = '<p>Kunde inte ladda blogginlägg.</p>';
+        console.error(err);
+      }
+    }
+
+    loadBlogPosts();
   </script>
 </body>
 </html>
