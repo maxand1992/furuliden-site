@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Blogg – Furuliden Consulting</title>
+  <style>
+    body {
+      background-color: #101820;
+      color: #F3F4F8;
+      font-family: 'Inter', sans-serif;
+      padding: 2rem;
+    }
+    h1 {
+      color: #C7A144;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #F3C969;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Vår blogg</h1>
+  <ul id="post-list"></ul>
+
+  <script>
+    // Hårdkodat för enkelhet – byt ut till ditt faktiska innehåll eller bygg med JS
+    const posts = [
+      // Exempel – ersätt med dina riktiga filer
+      { title: "Första blogginlägget", filename: "2025-06-16-forsta-inlagget.md" },
+      { title: "Bokföringsbrott – vad gäller?", filename: "2025-06-17-bokforingsbrott.md" }
+    ];
+
+    const list = document.getElementById("post-list");
+
+    posts.forEach(post => {
+      const li = document.createElement("li");
+      li.innerHTML = `<a href="${post.filename}">${post.title}</a>`;
+      list.appendChild(li);
+    });
+  </script>
+</body>
+</html>
