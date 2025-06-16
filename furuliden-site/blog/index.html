@@ -1,76 +1,60 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Furuliden Blogg</title>
-  <link rel="icon" href="/favicon.png">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #101820;
-      color: #F3F4F8;
-      padding: 2rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    h1 {
-      color: #C7A144;
-    }
-    .post {
-      margin-bottom: 2rem;
-      padding: 1rem;
-      border: 1px solid #C7A144;
-      border-radius: 6px;
-      background-color: #111b24;
-    }
-    .post h2 {
-      margin-top: 0;
-      color: #F3C969;
-    }
-    .post a {
-      color: #F3C969;
-      text-decoration: none;
-    }
-    .post a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <h1>Furulidens Blogg</h1>
-  <div id="blog-list">Laddar blogginlägg...</div>
-
-  <script>
-    async function loadBlogPosts() {
-      const list = document.getElementById('blog-list');
-      try {
-        const res = await fetch('/blog');
-        const html = await res.text();
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, 'text/html');
-        const links = [...doc.links].filter(link => link.href.endsWith('.md'));
-
-        if (links.length === 0) {
-          list.innerHTML = '<p>Inga inlägg hittades.</p>';
-          return;
-        }
-
-        list.innerHTML = '';
-        links.forEach(link => {
-          const title = decodeURIComponent(link.textContent.replace(/[-_]/g, ' '));
-          const div = document.createElement('div');
-          div.className = 'post';
-          div.innerHTML = `<h2><a href="${link.href}">${title}</a></h2>`;
-          list.appendChild(div);
-        });
-      } catch (err) {
-        list.innerHTML = '<p>Kunde inte ladda blogginlägg.</p>';
-        console.error(err);
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furuliden Blogg</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+      body {
+        background-color: #101820;
+        color: #F3F4F8;
+        font-family: 'Inter', sans-serif;
+        padding: 2rem;
       }
-    }
+      h1 {
+        color: #C7A144;
+        text-align: center;
+      }
+      .post {
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #C7A144;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Blogg – Furuliden Consulting</h1>
+    <div id="blog-container">Laddar inlägg...</div>
 
-    loadBlogPosts();
-  </script>
-</body>
+    <script>
+      async function loadMarkdownPosts() {
+        const files = [
+          // Lista dina markdown-filer här
+          '/blog/2025-06-16-testinlagg.md'
+        ];
+
+        const container = document.getElementById('blog-container');
+        container.innerHTML = '';
+
+        for (const file of files) {
+          try {
+            const res = await fetch(file);
+            const text = await res.text();
+            const html = marked.parse(text);
+
+            const div = document.createElement('div');
+            div.className = 'post';
+            div.innerHTML = html;
+            container.appendChild(div);
+          } catch (err) {
+            console.error(`Fel vid läsning av ${file}:`, err);
+          }
+        }
+      }
+
+      loadMarkdownPosts();
+    </script>
+  </body>
 </html>
