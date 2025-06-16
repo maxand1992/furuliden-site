@@ -1,22 +1,19 @@
 <!doctype html>
 <html>
   <head>
-   <script>
-  if (window.location.hash.startsWith("#confirmation_token=")) {
-    window.location.href = "/admin/" + window.location.hash;
-  }
-
-  if (window.location.hash.startsWith("#recovery_token=")) {
-    window.location.href = "/admin/" + window.location.hash;
-  }
-</script>
-    <meta charset="utf-8">
-    <title>Adminpanel – Furuliden</title>
+    <meta charset="utf-8" />
+    <title>Admin – Furuliden</title>
+    <script>
+      if (window.location.hash.startsWith("#confirmation_token=") || window.location.hash.startsWith("#invite_token=") || window.location.hash.startsWith("#recovery_token=")) {
+        window.location.href = "/admin/" + window.location.hash;
+      }
+    </script>
   </head>
   <body>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-<script>
-  NetlifyCms.init(); // Starta CMS så det faktiskt reagerar på token
-</script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script>
+      NetlifyCms.init();
+    </script>
+  </body>
 </html>
