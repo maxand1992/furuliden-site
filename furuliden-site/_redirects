@@ -6,4 +6,5 @@
 /blog/tags/redovisning /tjanster#bokföring 301
 /shop?page=2 /kontakt 301
 /shop /kontakt 301
-/_api/v2/dynamicmodel /indexedDB.html 301
+/_api/v2/dynamicmodel /index.html 301
+/_api/v1/access-tokens /index.html 301
