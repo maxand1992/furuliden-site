@@ -26,5 +26,5 @@ För att undvika straffavgifter är det avgörande att ha en god förståelse f�
 Hör av dig till oss om du behöver ytterligare hjälp 
 
 <div style="text-align:center;">
-        <a href="furuliden-site\kontakt.html" class="cta-button">Kontakta oss redan idag</a>
+        <a href="../../kontakt.html" class="cta-button">Kontakta oss redan idag</a>
       </div>
