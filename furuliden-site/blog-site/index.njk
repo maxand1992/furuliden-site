@@ -2,10 +2,13 @@
 layout: base.njk
 title: "Furulidens Blogg"
 ---
-
-<h1>Välkommen till bloggen</h1>
+<section>
+<h3>Välkommen till bloggen</h3>
 <ul>
+Här är våra blogginlägg.
+</section>
+<section>
   {% for post in collections.post %}
    <li><a href="/blog{{ post.url }}">{{ post.data.title }}</a></li>
   {% endfor %}
-</ul>
+</ul></section>
