@@ -15,7 +15,7 @@ module.exports = function(eleventyConfig) {
     dir: {
       input: ".",              // Rotmapp
       includes: "_includes",   // Layouts, partials
-      output: "_site"          // Output efter build
+      output: "../blog" // Output efter build
 
     },
     markdownTemplateEngine: "njk",
