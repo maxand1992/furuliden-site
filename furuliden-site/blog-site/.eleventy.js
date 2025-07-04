@@ -7,8 +7,8 @@ module.exports = function(eleventyConfig) {
   });
 
   // Kopiera statiska filer som ligger i "images", "styles", "favicon"
-  eleventyConfig.addPassthroughCopy("images");
-  eleventyConfig.addPassthroughCopy("style.css");
+  eleventyConfig.addPassthroughCopy("favicon.png");
+  eleventyConfig.addPassthroughCopy("logo.png");
 
 
   return {
