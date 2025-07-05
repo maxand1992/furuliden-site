@@ -142,7 +142,92 @@ a:hover,
 a:active {
   color: #F3C969;
   text-decoration: none;
+ 
+    }
+    h1 {
+      color: #C7A144;
+      font-size: 2.5rem;
+    }
+    #countdown {
+      font-size: 3rem;
+      margin-top: 2rem;
+      color: #F3C969;
+    }
+    .warning {
+      color: #FF6B6B;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+    }
+    .countdown-box {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #F3C969;
 }
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.2; }
+  100% { opacity: 1; }
+}
+.countdown-section {
+  background-color: #f3c969;
+  border: 1px solid #C7A144;
+  border-radius: 6px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  color: #101820;
+}
+
+.countdown-section h3 {
+  color: #C7A144;
+  margin-bottom: 1rem;
+}
+
+.countdown-box {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #C7A144;
+  margin-top: 1rem;
+}
+
+.blink {
+  animation: blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+.emoji-blink {
+  animation: blink-emoji 1s infinite;
+  display: inline-block;
+}
+
+@keyframes blink-emoji {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blinker 1.5s linear infinite;
+  font-weight: bold;
+  color: #D97706;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0.4;
+  }
+}
+
 </style>
 
 </style>

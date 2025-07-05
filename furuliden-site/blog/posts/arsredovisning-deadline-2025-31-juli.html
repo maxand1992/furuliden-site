@@ -285,32 +285,77 @@ a:active {
 
     
 <article>
-  <h2>Så Förhindrar Du Straffavgift från Skatteverket: Viktiga Tips och Råd!</h2>
+  <h2>Nedräkning till deadline: Årsredovisning och INK2 juli 2025</h2>
   
-    <p><em>2025-07-04</em></p>
+    <p><em>2025-07-01</em></p>
   
   <hr>
-  <section>Att hantera skattefrågor kan vara en utmaning, särskilt när man står inför risken för straffavgift från Skatteverket. Det kan kännas överväldigande, men med rätt tips och råd kan du navigera genom skattesystemet och undvika onödiga kostnader. I denna artikel kommer vi att utforska viktiga strategier för att säkerställa att dina deklarationer är korrekta och i tid, samt hur du bäst kan förbereda dig för revisioner. Oavsett om du är egenföretagare eller löntagare, finns det mångsidiga metoder som kan hjälpa dig att skydda dig från straffavgifter. Låt oss dyka ner i dessa insikter och göra skattehanteringen mer hanterbar</section>
+  <section class="qa-box">
+  <h3>📆 31 juli – Sista dag för årsredovisning</h3>
+  <div class="sub-box">
+    <h4>Nedräkning</h4>
+    <p id="countdown-ar">Laddar...</p>
+  </div>
+  <div class="sub-box">
+    <h4>Vad händer om du är sen?</h4>
+    <ul>
+      <li>Bolagsverket tar ut förseningsavgift på <strong>7 500 kr</strong></li>
+      <li>Vid fortsatt försening kan avgiften öka till <strong>30 000 kr</strong></li>
+    </ul>
+  </div>
+</section>
+<section class="qa-box">
+  <h3>📆 1 augusti – Inkomstdeklaration 2 (INK2)</h3>
+  <div class="sub-box">
+    <h4>Nedräkning</h4>
+    <p id="countdown-ink2">Laddar...</p>
+  </div>
+  <div class="sub-box">
+    <h4>Vad händer om du är sen?</h4>
+    <ul>
+      <li>Skatteverket tar ut förseningsavgift på <strong>6 250 kr</strong></li>
+      <li>Risk för kontrollbesök, skattetillägg och F-skatt indragen</li>
+    </ul>
+  </div>
+</section>
+<p>För att undvika kostsamma konsekvenser – <a href="/kontakt.html">kontakta oss idag</a> så hjälper vi dig få in allt i tid.</p>
+<script>
+function countdownTo(id, targetDate, label) {
+  const el = document.getElementById(id);
+  const now = new Date();
+  const diff = targetDate - now;
+  const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+
+  if (days > 0) {
+    el.innerHTML = `<strong>${days} dagar kvar</strong> ⚠️`;
+    el.classList.add("blink");
+  } else {
+    el.innerHTML = `🚨 Deadline för <strong>${label}</strong> har passerat.`;
+    el.classList.add("blink");
+  }
+}
+
+function updateCountdowns() {
+  const now = new Date();
+  const year = now.getMonth() > 6 ? now.getFullYear() + 1 : now.getFullYear();
+  const arDate = new Date(year, 6, 31);    // 31 juli
+  const ink2Date = new Date(year + (now.getMonth() > 6 ? 1 : 0), 7, 1);  // 1 augusti
+
+  countdownTo("countdown-ar", arDate, "Årsredovisning");
+  countdownTo("countdown-ink2", ink2Date, "INK2");
+}
+
+updateCountdowns();
+setInterval(updateCountdowns, 1000 * 60 * 30); // uppdatera var 30:e minut
+</script>
 <section>
-<h2>Vad är straffavgift och när kan den uppstå?</h2>
-<p>Straffavgift från Skatteverket är en ekonomisk påföljd som kan drabba både privatpersoner och företag om skattereglerna inte följs korrekt. Dessa avgifter kan uppstå vid olika typer av felaktigheter, såsom sent inlämnade deklarationer, felaktiga uppgifter eller utebliven betalning av skatt. Skatteverket använder straffavgifter som ett sätt att uppmuntra korrekt och i tid skattehantering, och för att säkerställa att alla skattebetalare följer reglerna.</p>
-<p>Straffavgiften kan variera beroende på typ och omfattning av överträdelsen. För exempelvis sen deklaration kan avgiften vara en fast summa, medan felaktiga uppgifter kan resultera i procentuella påslag på den skatt som skulle ha betalats. Vid allvarligare överträdelser, som skattebrott, kan straffavgiften bli betydligt högre och till och med leda till rättsliga påföljder. Det är därför viktigt att förstå vilka regler som gäller och hur man kan undvika dessa kostnader.</p>
-<p>För att undvika straffavgifter är det avgörande att ha en god förståelse för skattesystemet och vilka krav som ställs på dig som skattebetalare. Genom att vara proaktiv och noggrann med din skattehantering kan du minimera risken för att drabbas av straffavgifter och de ekonomiska konsekvenser som de medför.</section></p>
-<section><H2>Vanliga orsaker till straffavgifter från Skatteverket </h2>
-1. En av de vanligaste orsakerna till straffavgift från Skatteverket är fel i deklarationen. Det kan handla om att uppgifter inte är korrekt ifyllda, att viktiga dokument saknas eller att inkomster och utgifter inte redovisats på rätt sätt. Även små misstag kan leda till stora problem, särskilt om de inte upptäcks och rättas i tid.
-<ol start="2">
-<li>
-<p>Sen inlämning av deklaration är en annan vanlig anledning till straffavgift. Skatteverket tillämpar fasta avgifter för deklarationer som lämnas in efter utsatt datum. Dessa avgifter kan snabbt bli kostsamma, särskilt om förseningarna är återkommande. Det är därför viktigt att hålla koll på viktiga datum och säkerställa att alla dokument lämnas in i tid.</p>
-</li>
-<li>
-<p>En tredje vanlig orsak till straffavgift är felaktig skattebetalning. Om skatten inte betalas i tid eller om fel belopp betalas kan Skatteverket ålägga straffavgifter och ränta på den obetalda skatten. Det är därför viktigt att noggrant följa betalningsplaner och dubbelkolla att alla betalningar är korrekta. </section></p>
-</li>
-</ol>
-<p>Hör av dig till oss om du behöver ytterligare hjälp</p>
-<section>
- <div style="cta-button;">
-        <a href="../../kontakt.html" class="cta-button">Kontakta oss redan idag</a>
+     <div style="text-align:center;">
+        <a href="../../ardusen.html" class="cta-button">Läs mer om risker för att bli försenad här</a>
       </div>
+          <div style="text-align:center;">
+        <a href="../../contactus.html" class="cta-button">Eller kontakta oss redan idag</a>
+      </div>
+      </section>
 </article>
 
   </main>
