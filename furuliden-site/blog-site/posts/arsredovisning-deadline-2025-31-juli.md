@@ -17,6 +17,9 @@ permalink: "posts/arsredovisning-deadline-2025-31-juli.html"
     <ul>
       <li>Bolagsverket tar ut förseningsavgift på <strong>7 500 kr</strong></li>
       <li>Vid fortsatt försening kan avgiften öka till <strong>30 000 kr</strong></li>
+     <div style="text-align:center;">
+        <a href="https://bolagsverket.se/foretag/aktiebolag/arsredovisningforaktiebolag.759.html#h-Omarsredovisningenkommerinforsent" class="cta-button">Läs mer på Bolagsverket om att bli försenad</a>
+      </div>
     </ul>
   </div>
 </section>
