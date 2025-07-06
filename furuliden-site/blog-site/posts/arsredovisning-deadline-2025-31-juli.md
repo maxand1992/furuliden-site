@@ -5,7 +5,17 @@ layout: post.njk
 tags: post
 permalink: "posts/arsredovisning-deadline-2025-31-juli.html"
 ---
-<head><title>Bli inte försenad med årsredovisningen - Furuliden Consulting </title></head>
+<head><title>Bli inte försenad med årsredovisningen - Furuliden Consulting </title>
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Furuliden Consulting – Vi kliver in när andra tvekar" />
+<meta name="twitter:description" content="Slipp försening med hjälp av Furuliden Consulting" />
+<meta name="twitter:image" content="https://furulidenconsulting.se/logo.png" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Bli inte försenad med årsredovisningen - Furuliden Consulting" />
+<meta property="og:description" content="Vi hjälper dig att inte få förseningsavgift på bolagsverket." />
+<meta property="og:url" content="https://furulidenconsulting.se/" />
+<meta property="og:image" content="https://furulidenconsulting.se/logo.png" />
+</head>
 <section class="qa-box">
   <h3>📆 31 juli – Sista dag för årsredovisning</h3>
   <div class="sub-box">
