@@ -10,7 +10,7 @@ permalink: "posts/arsredovisning-deadline-2025-31-juli.html"
 <meta name="twitter:title" content="Furuliden Consulting – Vi kliver in när andra tvekar" />
 <meta name="twitter:description" content="Slipp försening med hjälp av Furuliden Consulting" />
 <meta name="twitter:image" content="https://furulidenconsulting.se/logo.png" />
-<meta name="keywords" content="försenad årsredovisning, bolagsverket, deadline årsredovisning, deklaration sen, kontakt furuliden">
+<meta name="keywords" content="försenad årsredovisning, förseningsavgift bolagsverket, hindra bokföringsbrott, bokföringsbrott, förseningsavgift skatteverket">
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Bli inte försenad med årsredovisningen - Furuliden Consulting" />
 <meta property="og:description" content="Vi hjälper dig att inte få förseningsavgift på bolagsverket." />
