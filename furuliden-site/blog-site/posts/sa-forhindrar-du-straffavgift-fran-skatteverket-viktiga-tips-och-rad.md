@@ -5,6 +5,7 @@ layout: post.njk
 tags: post
 permalink: "posts/{{ title | slug }}.html"
 ---
+<head><title>Så förhindrar du problem med straffavgift hos skatteverket - Furuliden Consulting </title></head>
 
 <section>Att hantera skattefrågor kan vara en utmaning, särskilt när man står inför risken för straffavgift från Skatteverket. Det kan kännas överväldigande, men med rätt tips och råd kan du navigera genom skattesystemet och undvika onödiga kostnader. I denna artikel kommer vi att utforska viktiga strategier för att säkerställa att dina deklarationer är korrekta och i tid, samt hur du bäst kan förbereda dig för revisioner. Oavsett om du är egenföretagare eller löntagare, finns det mångsidiga metoder som kan hjälpa dig att skydda dig från straffavgifter. Låt oss dyka ner i dessa insikter och göra skattehanteringen mer hanterbar</section>
 

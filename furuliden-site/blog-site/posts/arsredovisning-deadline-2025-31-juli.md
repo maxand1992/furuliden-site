@@ -5,7 +5,7 @@ layout: post.njk
 tags: post
 permalink: "posts/arsredovisning-deadline-2025-31-juli.html"
 ---
-
+<head><title>Bli inte försenad med årsredovisningen - Furuliden Consulting </title></head>
 <section class="qa-box">
   <h3>📆 31 juli – Sista dag för årsredovisning</h3>
   <div class="sub-box">
