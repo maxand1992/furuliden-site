@@ -16,6 +16,7 @@ permalink: "posts/arsredovisning-deadline-2025-31-juli.html"
 <meta property="og:description" content="Vi hjälper dig att inte få förseningsavgift på bolagsverket." />
 <meta property="og:url" content="https://furulidenconsulting.se/" />
 <meta property="og:image" content="https://furulidenconsulting.se/logo.png" />
+<meta name="description" content="Undvik förseningsavgifter – lämna in årsredovisning senast 31 juli 2025 och INK2 senast 1 augusti med stöd från Furuliden Consulting.">
 </head>
 <section class="qa-box">
   <h3>📆 31 juli – Sista dag för årsredovisning</h3>
