@@ -91,7 +91,7 @@ function updateCountdowns() {
 updateCountdowns();
 setInterval(updateCountdowns, 1000 * 60 * 30); // uppdatera var 30:e minut
 </script>
-  <h1>FAQ – Skatteverket & Bolagsverket</h1>
+
    
     <a href="tjanster.html"  title="Läs mer om våra bokföringstjänster">Se också våra tjänster om du vill ha hjälp direkt</a>
    <br>
