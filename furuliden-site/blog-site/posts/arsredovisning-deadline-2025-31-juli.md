@@ -34,6 +34,12 @@ image: "images/countdown.jpg"
       <li>Bolagsverket tar ut förseningsavgift på <strong>7 500 kr</strong></li>
       <li>Vid fortsatt försening kan avgiften öka till <strong>30 000 kr</strong></li>
       <li> Straffavgiften från Bolagsverket är inte avdragsgill, den minskar alltså inte ner skatten på årets resultat vid ev vinst.</li>
+      </div>
+       <div class="sub-box">
+    <h4>Är straffavgiften avdragsgill?</h4>
+    <ul>
+      <li>Nej, straffavgiften från Bolagsverket är inte avdragsgill. Därmed påverkar den alltså inte det beskattningsbara resultet för året.</li>
+     
      <div style="text-align:center;">
         <a href="https://bolagsverket.se/foretag/aktiebolag/arsredovisningforaktiebolag.759.html#h-Omarsredovisningenkommerinforsent" class="cta-button">Läs mer på Bolagsverket om att bli försenad</a>
       </div>
