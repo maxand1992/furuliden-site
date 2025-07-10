@@ -1,6 +1,6 @@
 ---
 title: "Nedräkning till deadline: Årsredovisning och INK2 juli 2025"
-date: 2025-07-01
+date: 2025-07-01 
 layout: post.njk
 tags: post
 permalink: "posts/arsredovisning-deadline-2025-31-juli.html"

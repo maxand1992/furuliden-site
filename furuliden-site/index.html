@@ -2,9 +2,11 @@
 <html lang="sv">
 <head>
 <meta name="twitter:card" content="summary" />
+
 <meta name="twitter:title" content="Furuliden Consulting – Vi kliver in när andra tvekar" />
 <meta name="twitter:description" content="Försenad? Vi hjälper företag med redovisning, revision & juridik." />
 <meta name="twitter:image" content="https://furulidenconsulting.se/logo.png" />
+<meta name="description" content="Experter på redovisning och juridisk rådgivning i Stockholm – Furuliden Consulting hjälper företag hantera bokföring, årsbokslut och krishantering smidigt.">
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Furuliden Consulting – Redovisning & juridik i krislägen" />
 <meta property="og:description" content="Försenad årsredovisning? Vi hjälper företag i kris att komma ikapp." />
@@ -140,6 +142,133 @@ a:active {
   color: #F3C969;
   text-decoration: none;
 }
+nav ul.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul.menu > li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul.menu > li > a {
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+nav ul.menu .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #111b24;
+  min-width: 200px;
+  border: 1px solid #C7A144;
+  z-index: 1000;
+  top: 100%;
+  left: 0;
+}
+
+nav ul.menu .dropdown-content li {
+  display: block;
+}
+
+nav ul.menu .dropdown-content li a {
+  padding: 0.5rem 1rem;
+  display: block;
+  color: #F3F4F8;
+  background-color: #111b24;
+}
+
+nav ul.menu .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav ul.menu .dropdown-content li a:hover {
+  background-color: #F3C969;
+  color: #101820;
+}
+nav ul li {
+  position: relative;
+}
+
+nav ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 150x; /* justera bredden här */
+  background-color: #0f1a2a;
+  border: 1px solid #C7A144;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  display: none;
+  z-index: 1000;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  margin: 0.2rem 0;
+  text-align: left;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #101820;
+  text-align: center;
+}
+
+.menu > li {
+  display: inline-block;
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding: 0.8rem 1.2rem;
+  color: #F3F4F8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu li:hover > a {
+  background-color: #F3C969;
+  color: #101820;
+}
+
+/* Första nivå */
+.dropdown-content,
+.dropdown-subcontent {
+  display: none;
+  position: absolute;
+  background-color: #0f1a2a;
+  border: 1px solid #C7A144;
+  border-radius: 6px;
+  padding: 0.5rem 0;
+  z-index: 1000;
+  min-width: 220px;
+  top: 100%;
+  left: 0;
+  text-align: left;
+}
+
+.dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+/* Submenu (andra nivå) */
+.dropdown-content .dropdown:hover > .dropdown-subcontent {
+  display: block;
+  left: 100%;
+  top: 0;
+}
+
+.dropdown-content li {
+  position: relative;
+}
 </style>
 <script type="application/ld+json">
 {
@@ -180,14 +309,15 @@ a:active {
 </script>
 </head>
 <body>
-  <nav>
-    <a href="index.html" title="Start- Redovisning & rådgivning i Stockholm">Start</a>
-    <a href="tjanster.html" title="Läs mer om våra bokförings- och redovisningstjänster">Tjänster</a>
+<nav>
+    <a href='/' title='Start- Redovisning & rådgivning i Stockholm'>Start</a>
+    <a href='/tjanster' title='Läs mer om våra bokförings- och redovisningstjänster'>Tjänster</a>
     <a href="furuliden-site\blog"title="Vår blogg">Blogg</a>
     <a href="kontakt.html" title="Gå till kontaktsidan">Kontakt</a>
-    <a href="faq-bolagsverket-skatteverket.html" title="Läs våra frågor och svar kring Skatteverket och Bolagsverket">Frågor & svar om Bolagsverket och Skatteverket</a>
+    <a href='/faq-bolagsverket-skatteverket' title='Läs våra frågor och svar kring Skatteverket och Bolagsverket'>Frågor & svar om Bolagsverket och Skatteverket</a>
      
-  </nav>
+
+</nav>
   <header>
     <img src="logo.png" alt="Furuliden Consulting AB logotype. " class="logo" />
     <h1>Vi kliver in när andra tvekar</h1>

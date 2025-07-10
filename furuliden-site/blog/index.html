@@ -219,7 +219,69 @@ a:active {
     opacity: 0.4;
   }
 }
+.blog-heading {
+  color: #F3F4F8;
+  text-align: left;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
 
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 420px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #0f1a2a;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(60%);
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.card-category {
+  color: #F3C969;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.card-title {
+  margin: 0.2rem 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.card-author {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  color: #ccc;
+}
 </style>
 
 </style>
@@ -254,7 +316,6 @@ a:active {
 
 </script>
 <link rel="canonical" href="https://furulidenconsulting.se/">
-<meta name="description" content="Furuliden Consulting AB är en modern redovisningsbyrå i Stockholm som hjälper företag med bokföring, ekonomi och juridisk rådgivning. Vi kliver in när andra tvekar – och stöttar företag i nöd med kraft och kompetens.">
 <script>
   if (window.location.href.includes('#recovery_token=')) {
     window.location.href = '/admin/' + window.location.hash;
@@ -276,17 +337,33 @@ a:active {
   <main>
 
     <section>
-<h3>Välkommen till bloggen</h3>
+<h1>Välkommen till bloggen</h1>
 <ul>
-Här är våra blogginlägg.
-</section>
-<section>
+
+
+
+<h2 class="blog-heading">Alla blogginlägg</h2>
+<div class="card-grid">
   
-   <li><a href="/blog/posts/arsredovisning-deadline-2025-31-juli.html">Nedräkning till deadline: Årsredovisning och INK2 juli 2025</a></li>
+    <a href="/posts/arsredovisning-deadline-2025-31-juli.html" class="card">
+      <div class="card-image" style="background-image: url('/images/placeholder.jpg');"></div>
+      <div class="card-overlay">
+        <p class="card-category"></p>
+        <h3 class="card-title">Nedräkning till deadline: Årsredovisning och INK2 juli 2025</h3>
+        <p class="card-author">Max Anderstedt</p>
+      </div>
+    </a>
   
-   <li><a href="/blog/posts/s-frhindrar-du-straffavgift-frn-skatteverket-viktiga-tips-och-rd.html">Så Förhindrar Du Straffavgift från Skatteverket: Viktiga Tips och Råd!</a></li>
+    <a href="/posts/s-frhindrar-du-straffavgift-frn-skatteverket-viktiga-tips-och-rd.html" class="card">
+      <div class="card-image" style="background-image: url('/images/placeholder.jpg');"></div>
+      <div class="card-overlay">
+        <p class="card-category"></p>
+        <h3 class="card-title">Så Förhindrar Du Straffavgift från Skatteverket: Viktiga Tips och Råd!</h3>
+        <p class="card-author">Max Anderstedt</p>
+      </div>
+    </a>
   
-</ul></section>
+</div>
 
 
   </main>
