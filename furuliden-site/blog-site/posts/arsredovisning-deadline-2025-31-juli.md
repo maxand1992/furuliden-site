@@ -21,6 +21,7 @@ image: "images/countdown.jpg"
 </head>
 <time datetime="2025-07-01">Publicerad 1 juli 2025</time>
 <time datetime="2025-07-09">• Uppdaterad 9 juli 2025</time>
+ <section><strong>Räkenskapsår som slutade 2024-12-31</strong></section>
 <section class="qa-box">
   <h3>📆 31 juli – Sista dag för årsredovisning</h3>
   <div class="sub-box">
@@ -49,8 +50,13 @@ image: "images/countdown.jpg"
     <h4>Vad händer om du är sen?</h4>
     <ul>
       <li>Skatteverket tar ut förseningsavgift på <strong>6 250 kr</strong></li>
-      <li>Risk för kontrollbesök, skattetillägg och F-skatt indragen</li>
+      <li> Efter två månader till så tillkommer ytterligare <strong>6 250 kr</strong></li>
+      <li> Total avgift upp till  <strong>12 500 kr kr</strong></li>
+      <li>Risk för skatterevision, skattetillägg och F-skatt indragen</li>
     </ul>
+    <div style="text-align:center;">
+        <a href="https://skatteverket.se/foretag/inkomstdeklaration/deklareraatettaktiebolagellerenekonomiskforening.4.46ae6b26141980f1e2d1261.html" class="cta-button">Läs mer på Skatteverket om inkomstdeklaration för aktiebolag</a>
+      </div>
   </div>
 </section>
 
@@ -86,8 +92,8 @@ updateCountdowns();
 setInterval(updateCountdowns, 1000 * 60 * 30); // uppdatera var 30:e minut
 </script>
 
-<Section> #försenadårsredovisning #straffavgift #Bokföringsbrott #försenad årsredovsining  
-#bokföringsbrott ekobrottsmyndigheten
+<Section> #försenadårsredovisning #straffavgift #Bokföringsbrott 
+#bokföringsbrottekobrottsmyndigheten #årsredovisningförsenad
 <section>
      <div style="text-align:center;">
         <a href="../../ardusen.html" class="cta-button">Läs mer om risker för att bli försenad här</a>
