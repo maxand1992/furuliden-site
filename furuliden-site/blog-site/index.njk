@@ -1,16 +1,31 @@
 ---
 layout: base.njk
 title: "Furulidens Blogg"
+<meta name="description" content="Läs Furulidens blogg om bokslut, deklarationstips, deadlines och hur du undviker straffavgifter – expertråd från Stockholm.">
 ---
 <section>
-<h1>Välkommen till bloggen</h1>
+<h3>Välkommen till bloggen</h3>
 <ul>
-
+Här är våra blogginlägg.
+</section>
+<section>
+  {% for post in collections.post %}
+   <li><a href="/blog{{ post.url }}">{{ post.data.title }}</a></li>
+  {% endfor %}
+</ul></section>
+---
+layout: base.njk
+title: "Alla blogginlägg"
+---
+---
+layout: base.njk
+title: "Alla blogginlägg"
+---
 
 <h2 class="blog-heading">Alla blogginlägg</h2>
 <div class="card-grid">
   {% for post in collections.post | reverse %}
-    <a href="{{ blog/post.url }}" class="card">
+    <a href="/blog{{ post.url }}">{{ post.data.title }}</a>
       <div class="card-image" style="background-image: url('{{ post.data.image or '/images/placeholder.jpg' }}');"></div>
       <div class="card-overlay">
         <p class="card-category">{{ post.data.category | upper }}</p>
