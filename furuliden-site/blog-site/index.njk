@@ -7,11 +7,10 @@ title: "Furulidens Blogg"
 <ul>
 
 
-
 <h2 class="blog-heading">Alla blogginlägg</h2>
 <div class="card-grid">
   {% for post in collections.post | reverse %}
-    <a href="{{ post.url }}" class="card">
+    <a href="{{ blog/post.url }}" class="card">
       <div class="card-image" style="background-image: url('{{ post.data.image or '/images/placeholder.jpg' }}');"></div>
       <div class="card-overlay">
         <p class="card-category">{{ post.data.category | upper }}</p>
