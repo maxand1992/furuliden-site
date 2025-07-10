@@ -12,11 +12,19 @@ Här är våra blogginlägg.
    <li><a href="/blog{{ post.url }}">{{ post.data.title }}</a></li>
   {% endfor %}
 </ul></section>
+---
+layout: base.njk
+title: "Alla blogginlägg"
+---
+---
+layout: base.njk
+title: "Alla blogginlägg"
+---
 
 <h2 class="blog-heading">Alla blogginlägg</h2>
 <div class="card-grid">
   {% for post in collections.post | reverse %}
-    <a href="/blog{{ post.url }}">{{ post.data.title }}</a>
+    <a href="/blog{{ post.url }}" class="card">
       <div class="card-image" style="background-image: url('{{ post.data.image or '/images/placeholder.jpg' }}');"></div>
       <div class="card-overlay">
         <p class="card-category">{{ post.data.category | upper }}</p>
