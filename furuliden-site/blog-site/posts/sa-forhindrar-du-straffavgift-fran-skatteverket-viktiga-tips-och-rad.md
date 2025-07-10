@@ -4,6 +4,7 @@ date: 2025-06-30
 layout: post.njk
 tags: post
 permalink: "posts/{{ title | slug }}.html"
+image: "images/straff.jpg"
 ---
 <head><title>Så förhindrar du problem med straffavgift hos skatteverket - Furuliden Consulting </title></head>
 

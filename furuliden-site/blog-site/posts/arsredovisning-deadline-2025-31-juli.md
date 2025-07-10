@@ -4,6 +4,7 @@ date: 2025-07-01
 layout: post.njk
 tags: post
 permalink: "posts/arsredovisning-deadline-2025-31-juli.html"
+image: "images/countdown.jpg"
 ---
 <head><title>Bli inte försenad med årsredovisningen - Furuliden Consulting </title>
 <meta name="twitter:card" content="summary" />
@@ -18,6 +19,8 @@ permalink: "posts/arsredovisning-deadline-2025-31-juli.html"
 <meta property="og:image" content="https://furulidenconsulting.se/logo.png" />
 <meta name="description" content="Undvik förseningsavgifter – lämna in årsredovisning senast 31 juli 2025 och INK2 senast 1 augusti med stöd från Furuliden Consulting.">
 </head>
+<time datetime="2025-07-01">Publicerad 1 juli 2025</time>
+<time datetime="2025-07-09">• Uppdaterad 9 juli 2025</time>
 <section class="qa-box">
   <h3>📆 31 juli – Sista dag för årsredovisning</h3>
   <div class="sub-box">
