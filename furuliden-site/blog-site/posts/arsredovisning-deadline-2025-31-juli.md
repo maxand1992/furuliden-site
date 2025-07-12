@@ -112,12 +112,68 @@ image: "images/countdown.jpg"
         "text": "Furuliden Consulting – vi har lång erfarenhet av att hjälpa företag i exakt den här situationen."
       }
     }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan man ändra en redan inlämnad och registrerad årsredovsining till bolagsverket?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enligt god redovsiningssed får man INTE rätta en redan inlämnad och registrerad årsredovsining. Furuliden kan hjälpa er hur ni rättar detta i nästkommande årsredovising"
+      }
   ]
 }
 </script>
 </head>
 <time datetime="2025-07-01">Publicerad 1 juli 2025</time>
-<time datetime="2025-07-09">• Uppdaterad 9 juli 2025</time>
+<time datetime="2025-07-12">• Uppdaterad 12 juli 2025</time>
+<div class="qa-box">
+  <h3>✅ Viktigt just nu – Missa inte deadlines!</h3>
+  <div class="sub-box">
+    <p>Vi närmar oss deadline för <strong>årsredovisning (31 juli)</strong> och <strong>INK2 (1 augusti)</strong>. Se till att du lämnat in allt i tid för att undvika kostsamma avgifter.</p>
+  </div>
+</div>
+
+
+<div class="qa-box">
+  <h3>⏳ Är du redan försenad med en annan årsredovisning?</h3>
+  <div class="sub-box">
+    <p>Välj ditt räkenskapsår nedan för att se vilken deadline som gällde för inlämning av årsredovisningen. Har du missat den? Då är det hög tid att agera.</p>
+    <label for="period-select"><strong>När slutade ditt räkenskapsår?</strong></label>
+    <select id="period-select" onchange="showDeadline()">
+      <option value="">-- Välj månad --</option>
+      <option value="2024-06">Juni 2024</option>
+      <option value="2024-07">Juli 2024</option>
+      <option value="2024-08">Augusti 2024</option>
+      <option value="2024-09">September 2024</option>
+      <option value="2024-10">Oktober 2024</option>
+      <option value="2024-11">November 2024</option>
+      <option value="2024-12">December 2024</option>
+    </select>
+    <p id="deadline-result" style="margin-top:1rem;font-weight:bold;"></p>
+    <p><a href="../../kontaktinformation.html" class="cta-button">Kontakta oss så hjälper vi dig vidare</a></p>
+  </div>
+</div>
+
+<script>
+function showDeadline() {
+  const select = document.getElementById("period-select").value;
+  const result = document.getElementById("deadline-result");
+  const deadlines = {
+    "2024-06": "31 januari 2025",
+    "2024-07": "28 februari 2025",
+    "2024-08": "31 mars 2025",
+    "2024-09": "30 april 2025",
+    "2024-10": "31 maj 2025",
+    "2024-11": "30 juni 2025",
+    "2024-12": "31 juli 2025"
+  };
+  result.innerHTML = deadlines[select]
+    ? `👉 Deadline för årsredovisningen var <strong>${deadlines[select]}</strong>.`
+    : "";
+}
+</script>
+
+
  <section><strong>Räkenskapsår som slutade 2024-12-31</strong></section>
 <section class="qa-box">
   <h3>📆 31 juli – Sista dag för årsredovisning</h3>
@@ -126,6 +182,7 @@ image: "images/countdown.jpg"
     <p id="countdown-ar">Laddar...</p>
   </div>
   <div class="sub-box">
+
     <h4>Vad händer om du är sen?</h4>
     <ul>
       <li>Bolagsverket tar ut förseningsavgift på <strong>7 500 kr</strong></li>
@@ -254,7 +311,14 @@ setInterval(updateCountdowns, 1000 * 60 * 30); // uppdatera var 30:e minut
 </div>
 </div>
 </div>
-
+<div class="qa-box">
+  <h3>📄 Kan man ändra en redan inlämnad och registrerad årsredovisning?</h3>
+  <div class="sub-box">
+    <p><strong>Nej – enligt god redovisningssed får man INTE rätta en redan inlämnad årsredovisning.</strong> När årsredovisningen är registrerad hos Bolagsverket anses den vara juridiskt bindande.</p>
+    <p>Att försöka justera siffror eller ersätta rapporter i efterhand kan i värsta fall bedömas som ett bokföringsbrott. Undantag finns, men kräver synnerliga skäl och kontakt med Bolagsverket i förväg.</p>
+    <p><strong>Furuliden Consulting</strong> kan hjälpa dig att hantera fel – genom att justera dem korrekt i nästkommande årsredovisning enligt reglerna.</p>
+  </div>
+</div>
 
 
 <Section> #försenadårsredovisning #straffavgift #Bokföringsbrott 
