@@ -125,7 +125,7 @@ image: "images/countdown.jpg"
 </script>
 </head>
 <time datetime="2025-07-01">Publicerad 1 juli 2025</time>
-<time datetime="2025-07-18">• Uppdaterad 12 juli 2025</time>
+<time datetime="2025-07-23">• Uppdaterad 23 juli 2025</time>
 <div class="qa-box">
   <h3>✅ Viktigt just nu – Missa inte deadlines!</h3>
   <div class="sub-box">
