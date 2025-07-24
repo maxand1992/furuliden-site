@@ -15,3 +15,8 @@
 /blog/posts/tjanster.html /tjanster.html 301 
 /contactus.html /kontaktinformation.html 301
 furuliden-site/blog/posts/arsredovisning-deadline-2025-31-juli.html /blog/posts/arsredovisning-deadline-2025-31-juli.html 301
+blog.html /blog/index.html 301
+furuliden-site/blog /index.html /blog/index.html 301
+/kontaktinformation /kontaktinformation.html 301
+/kontaktinformation.html /kontaktinformation.html 301
+/tjanster /tjanster.html 301
