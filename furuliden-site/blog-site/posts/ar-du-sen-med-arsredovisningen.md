@@ -1,6 +1,6 @@
 ---
 title: "Är du sen med årsredovsiningen?"
-date: 2025-06-30
+date: 2025-08-05
 layout: post.njk
 tags: post
 permalink: "posts/ardusenarsredovisning.html"
