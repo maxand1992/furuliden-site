@@ -96,9 +96,7 @@ image: "images/straff.jpg"
   
 
 <footer style="background-color:#0f1a2a; color:#F3F4F8; padding:1rem; text-align:center; font-size:0.85rem;">
- <script>
-  document.write('&copy; ' + new Date().getFullYear() + ' Furuliden Consulting AB · 08–21 40 00 · Sankt Eriksplan, Stockholm');
-</script>
+
 
 
 </footer>
