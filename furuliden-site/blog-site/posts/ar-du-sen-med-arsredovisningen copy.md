@@ -3,7 +3,7 @@ title: "Är du sen med årsredovsiningen?"
 date: 2025-08-05
 layout: post.njk
 tags: post
-permalink: "posts/forsenadarsredovisning-2025-07-31.html"
+permalink: "posts/ardusenarsredovisning.html"
 image: "images/straff.jpg"
 
 ---
