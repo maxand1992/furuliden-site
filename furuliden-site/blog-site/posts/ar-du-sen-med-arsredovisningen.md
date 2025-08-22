@@ -30,7 +30,6 @@ image: "images/bokforing_kaos_papper.jpg"
 
 
 
-
 <section>
  <section><strong>Räkenskapsår som slutade 2024-12-31</strong></section>
  
