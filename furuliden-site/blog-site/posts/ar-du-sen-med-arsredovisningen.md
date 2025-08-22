@@ -14,31 +14,7 @@ image: "images/bokforing_kaos_papper.jpg"
     <p><strong>Hej och välkommen! Vi hjälper dig att få iordning på er årsredovsning om du är försenad. </strong></p>
 
 
-<script>
-function countdownTo(id, targetDate, label) {
-  const el = document.getElementById(id);
-  const now = new Date();
-  const diff = targetDate - now;
-  const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
 
-  if (days > 0) {
-    el.innerHTML = `<strong>${days} dagar kvar</strong> ⚠️`;
-    el.classList.add("blink");
-  } else {
-    el.innerHTML = `🚨 Deadline för <strong>${label}</strong> har passerat.`;
-    el.classList.add("blink");
-  }
-}
-
-function updateCountdowns() {
-  const now = new Date();
-  const year = now.getMonth() > 6 ? now.getFullYear() + 1 : now.getFullYear();
-  const arDate = new Date(year, 6, 31);    // 31 juli
-  const ink2Date = new Date(year + (now.getMonth() > 6 ? 1 : 0), 7, 1);  // 1 augusti
-
-  countdownTo("countdown-ar", arDate, "Årsredovisning");
-  countdownTo("countdown-ink2", ink2Date, "INK2");
-    <hr>
   <div class="qa-box">
     <div class="flex-row">
       <div class="flex-box">
