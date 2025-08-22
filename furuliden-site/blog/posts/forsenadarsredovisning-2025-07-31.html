@@ -674,7 +674,7 @@ header {
 
     
 <article>
-  <h1>Är du sen med årsredovsiningen?</h1>
+  <h1>Är du sen med årsredovsiningen? Räkenskapsår 2024-12-31</h1>
   
     <p><em>2025-08-05</em></p>
   
@@ -684,7 +684,31 @@ header {
  <section>
     <h2>Är du sen med årsredovisningen?</h2>
     <p><strong>Hej och välkommen! Vi hjälper dig att få iordning på er årsredovsning om du är försenad. </strong></p>
-<p><hr></p>
+<script>
+function countdownTo(id, targetDate, label) {
+  const el = document.getElementById(id);
+  const now = new Date();
+  const diff = targetDate - now;
+  const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+
+  if (days > 0) {
+    el.innerHTML = `<strong>${days} dagar kvar</strong> ⚠️`;
+    el.classList.add("blink");
+  } else {
+    el.innerHTML = `🚨 Deadline för <strong>${label}</strong> har passerat.`;
+    el.classList.add("blink");
+  }
+}
+
+function updateCountdowns() {
+  const now = new Date();
+  const year = now.getMonth() > 6 ? now.getFullYear() + 1 : now.getFullYear();
+  const arDate = new Date(year, 6, 31);    // 31 juli
+  const ink2Date = new Date(year + (now.getMonth() > 6 ? 1 : 0), 7, 1);  // 1 augusti
+
+  countdownTo("countdown-ar", arDate, "Årsredovisning");
+  countdownTo("countdown-ink2", ink2Date, "INK2");
+    <hr>
   <div class="qa-box">
     <div class="flex-row">
       <div class="flex-box">
@@ -738,37 +762,46 @@ div class="sub-box">
       </div>
     </div>
     </div>
-<p><div class="qa-box">
-<h3>Vad vi kan göra – och hur snabbt</h3>
-<div class="sub-box">
-<p>Vi kan ta fram en årsredovisning och inkomstdeklaration som hinner in före nästa avgift – om vi får materialet i tid.</p>
-</div>
-<div class="sub-box">
-<p>Vi har processer för att hantera noteringar och felaktiga noter från tidigare år.</p>
-</div>
-<div class="sub-box">
-<p>Vi samarbetar med revisorer och advokater för mer avancerade fall.</p>
-</div>
-<div class="sub-box">
-<p>Vi garanterar ofta inlämning inom 3 veckor – om underlaget finns tillgängligt.</p>
-</div>
-</div></p>
-<p><div class="contact-links">
-<p>Vi erbjuder <a href="tjanster.html" title="Våra tjänster – Bokföring & rådgivning">tjänster kring årsredovisning</a> för företag i hela Sverige</p>
-<p><strong>Kontakta oss direkt:</strong></p>
-<ul>
-<li><a href="tel:+46709351349">070–935 13 49</a></li>
-<li><a href="mailto:max@furulidenconsulting.se">max@furulidenconsulting.se</a></li>
-<li><a href="sms:+46709351349?body=Hej%2C+jag+beh%C3%B6ver+hj%C3%A4lp+med+%C3%A5rsredovisningen">Skicka SMS direkt</a></li>
-</ul>
-</div></p>
-<p><hr style="border: 2px solid #F3F4F8; margin: 3rem 0;" /></p>
-<p><section class="bio">
-<h3>Max Anderstedt – specialist på årsredovisning i krislägen</h3>
-<p>Med över ett decennium i branschen är Max en trygg resurs i svåra lägen. Han har hjälpt många bolag ur pressade situationer – med full diskretion och precision.</p>
-<p>Max leder Furuliden Consulting och brinner för att lösa komplexa skattefrågor, årsredovisningar och juridiska detaljer – med ett lugn som smittar av sig även när läget känns kaotiskt.</p></p>
+
+    <div class="qa-box">
+      <h3>Vad vi kan göra – och hur snabbt</h3>
+      <div class="sub-box">
+        <p>Vi kan ta fram en årsredovisning och inkomstdeklaration som hinner in före nästa avgift – om vi får materialet i tid.</p>
+      </div>
+      <div class="sub-box">
+        <p>Vi har processer för att hantera noteringar och felaktiga noter från tidigare år.</p>
+      </div>
+      <div class="sub-box">
+        <p>Vi samarbetar med revisorer och advokater för mer avancerade fall.</p>
+      </div>
+      <div class="sub-box">
+        <p>Vi garanterar ofta inlämning inom 3 veckor – om underlaget finns tillgängligt.</p>
+      </div>
+    </div>
+
+    <div class="contact-links">
+      <p>Vi erbjuder <a href="tjanster.html" title="Våra tjänster – Bokföring & rådgivning">tjänster kring årsredovisning</a> för företag i hela Sverige</p>
+      <p><strong>Kontakta oss direkt:</strong></p>
+      <ul>
+        <li><a href="tel:+46709351349">070–935 13 49</a></li>
+        <li><a href="mailto:max@furulidenconsulting.se">max@furulidenconsulting.se</a></li>
+        <li><a href="sms:+46709351349?body=Hej%2C+jag+beh%C3%B6ver+hj%C3%A4lp+med+%C3%A5rsredovisningen">Skicka SMS direkt</a></li>
+      </ul>
+    </div>
+
+    <hr style="border: 2px solid #F3F4F8; margin: 3rem 0;" />
+    
+    <section class="bio">
+      <h3>Max Anderstedt – specialist på årsredovisning i krislägen</h3>
+      <p>Med över ett decennium i branschen är Max en trygg resurs i svåra lägen. Han har hjälpt många bolag ur pressade situationer – med full diskretion och precision.</p>
+      <p>Max leder Furuliden Consulting och brinner för att lösa komplexa skattefrågor, årsredovisningar och juridiska detaljer – med ett lugn som smittar av sig även när läget känns kaotiskt.</p>
 </section>
+  
+
 <footer style="background-color:#0f1a2a; color:#F3F4F8; padding:1rem; text-align:center; font-size:0.85rem;">
+
+
+
 </footer>
 <script src="https://static.elfsight.com/platform/platform.js" async></script>
 <div class="elfsight-app-c71f6448-1e4d-461c-bfdd-395cce91a656" data-elfsight-app-lazy></div>
