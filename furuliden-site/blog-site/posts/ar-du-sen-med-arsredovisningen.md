@@ -45,6 +45,9 @@ image: "images/bokforing_kaos_papper.jpg"
 </div>
       <p>Om bolagets revisor lämnar en revisionsberättelse med anmärkningar kan det skada företagets kreditvärdighet och förtroende. Det kan också leda till att Bolagsverket eller externa aktörer såsom banker och investerare ifrågasätter företagets styrning. Allvarliga brister kan leda till anmälningar till Skatteverket eller EBM.</p>
     </div>
+    </div>
+    </div>
+    </div>
     <div class="qa-box">
       <div class="flex-box">
         <h3>Förseningsavgifter</h3>
