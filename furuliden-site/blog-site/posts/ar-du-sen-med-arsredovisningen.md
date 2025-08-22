@@ -9,21 +9,7 @@ image: "images/bokforing_kaos_papper.jpg"
 ---
 
 <header>
- <style> .box-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 3rem;
-      margin-top: 2rem;
-    }
-     
-    .service-box {
-      border: 1px solid #C7A144;
-      border-radius: 8px;
-      padding: 1.5rem;
-      background-color: #111b24;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    </style>
+
     </header>
 <time datetime="2025-08-05">Publicerad 5 augusti 2025</time>
 <time datetime="2025-08-20">• Uppdaterad 22 augusti 2025</time>
