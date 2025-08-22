@@ -32,7 +32,15 @@ image: "images/straff.jpg"
       </div>
     </div>
     </div>
-
+div class="sub-box">
+  <h4>Extra allvarligt i tillståndspliktig verksamhet</h4>
+  <ul>
+    <li>I branscher som restaurang med alkoholtillstånd kan en oren revisionsberättelse leda till att tillstånd dras in</li>
+    <li>Detta sker efter prövning av både omfattning och bakomliggande skäl</li>
+  </ul>
+</div>
+      <p>Om bolagets revisor lämnar en revisionsberättelse med anmärkningar kan det skada företagets kreditvärdighet och förtroende. Det kan också leda till att Bolagsverket eller externa aktörer såsom banker och investerare ifrågasätter företagets styrning. Allvarliga brister kan leda till anmälningar till Skatteverket eller EBM.</p>
+    </div>
     <div class="qa-box">
       <div class="flex-box">
         <h3>Förseningsavgifter</h3>
