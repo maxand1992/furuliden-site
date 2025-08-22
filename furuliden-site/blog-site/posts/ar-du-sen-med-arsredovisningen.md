@@ -33,7 +33,8 @@ image: "images/bokforing_kaos_papper.jpg"
       </div>
     </div>
     </div>
-div class="sub-box">
+    
+<div class="sub-box">
   <h4>Extra allvarligt i tillståndspliktig verksamhet</h4>
   <ul>
     <li>I branscher som restaurang med alkoholtillstånd kan en oren revisionsberättelse leda till att tillstånd dras in</li>
