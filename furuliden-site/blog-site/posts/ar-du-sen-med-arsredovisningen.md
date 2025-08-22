@@ -8,7 +8,7 @@ image: "images/straff.jpg"
 
 ---
 <time datetime="2025-08-05">Publicerad 5 augusti 2025</time>
-<time datetime="2025-08-20">• Uppdaterad 20 augusti 2025</time>
+<time datetime="2025-08-20">• Uppdaterad 22 augusti 2025</time>
  <section>
     <h2>Är du sen med årsredovisningen?</h2>
     <p><strong>Hej och välkommen! Vi hjälper dig att få iordning på er årsredovsning om du är försenad. </strong></p>
