@@ -4,7 +4,7 @@ date: 2025-08-05
 layout: post.njk
 tags: post
 permalink: "posts/forsenadarsredovisning-2025-07-31.html"
-image: "images/straff.jpg"
+image: "images/bokforing_kaos_papper.jpg"
 
 ---
 <time datetime="2025-08-05">Publicerad 5 augusti 2025</time>
