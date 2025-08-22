@@ -323,7 +323,7 @@ setInterval(updateCountdowns, 1000 * 60 * 30); // uppdatera var 30:e minut
 
 <Section> #försenadårsredovisning #straffavgift #Bokföringsbrott 
 #bokföringsbrottekobrottsmyndigheten #årsredovisningförsenad
-<section>
+</section>
      <div style="text-align:center;">
         <a href="../../ardusen.html" class="cta-button">Läs mer om risker för att bli försenad här</a>
       </div>

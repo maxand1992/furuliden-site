@@ -8,13 +8,26 @@ image: "images/bokforing_kaos_papper.jpg"
 
 ---
 
-<header>
 
-    </header>
 <time datetime="2025-08-05">Publicerad 5 augusti 2025</time>
 <time datetime="2025-08-20">• Uppdaterad 22 augusti 2025</time>
 
-
+<header>
+ <style> .box-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+      margin-top: 2rem;
+    }
+      .service-box {
+      border: 1px solid #C7A144;
+      border-radius: 8px;
+      padding: 1.5rem;
+      background-color: #111b24;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    </style>
+    </header>
 
 <section>
  <section><strong>Räkenskapsår som slutade 2024-12-31</strong></section>
@@ -127,7 +140,10 @@ image: "images/bokforing_kaos_papper.jpg"
       <p>Med över ett decennium i branschen är Max en trygg resurs i svåra lägen. Han har hjälpt många bolag ur pressade situationer – med full diskretion och precision.</p>
       <p>Max leder Furuliden Consulting och brinner för att lösa komplexa skattefrågor, årsredovisningar och juridiska detaljer – med ett lugn som smittar av sig även när läget känns kaotiskt.</p>
 </section>
-  
+  <Section> #försenadårsredovisning #straffavgift #Bokföringsbrott 
+#bokföringsbrottekobrottsmyndigheten #årsredovisningförsenad #sentinlämnadårsredovisning
+#försenad årsredovisning bolagsverket
+</section>
 
 <footer style="background-color:#0f1a2a; color:#F3F4F8; padding:1rem; text-align:center; font-size:0.85rem;">
  <script>
