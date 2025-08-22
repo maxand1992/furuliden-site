@@ -903,7 +903,7 @@ function countdownTo(id, targetDate, label) {
 
 function updateCountdowns() {
   const now = new Date();
-  const year = now.getMonth() > 6 ? now.getFullYear() + 1 : now.getFullYear();
+  const year = now.getMonth() > 6 ? now.getFullYear() : now.getFullYear();
   const arDate = new Date(year, 6, 31);    // 31 juli
   const ink2Date = new Date(year + (now.getMonth() > 6 ? 1 : 0), 7, 1);  // 1 augusti
 
