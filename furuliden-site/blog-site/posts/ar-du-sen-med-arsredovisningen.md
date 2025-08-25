@@ -1,5 +1,5 @@
 ---
-title: "Är du sen med årsredovsiningen? Räkenskapsår 2024-12-31"
+title: "Är du försenad med årsredovisningen? "
 date: 2025-08-05
 layout: post.njk
 tags: post
